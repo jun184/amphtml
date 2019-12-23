@@ -25,8 +25,7 @@ export function openadstream(global, data) {
 
   let url =
     'https://' +
-    encodeURIComponent(data.adhost) +
-    '/3/' +
+    data.adhost +
     data.sitepage +
     '/1' +
     String(Math.random()).substring(2, 11) +
